@@ -38,6 +38,7 @@ namespace WindowsFormsApp1
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // button1
@@ -108,9 +109,9 @@ namespace WindowsFormsApp1
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 197);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 17);
+            this.label3.Size = new System.Drawing.Size(43, 17);
             this.label3.TabIndex = 9;
-            this.label3.Text = "eps";
+            this.label3.Text = "eps/n";
             // 
             // richTextBox1
             // 
@@ -121,11 +122,22 @@ namespace WindowsFormsApp1
             this.richTextBox1.TabIndex = 10;
             this.richTextBox1.Text = "Поиск экстремума функции на заданном отрезке методом золотого сечения\n";
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(617, 266);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(153, 21);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.Text = "Метод Фибоначчи";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -153,6 +165,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
     }
 }
 
