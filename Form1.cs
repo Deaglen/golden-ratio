@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
             double b = double.Parse(textBox2.Text); //2
             double eps = double.Parse(textBox3.Text); //0.001
 
-            find_max_or_min_of_func A = new find_max_or_min_of_func(a, b, eps);
+
 
             bool max = true;
             if (checkBox1.Checked)
@@ -34,10 +34,19 @@ namespace WindowsFormsApp1
 
             int type = 1;
             if (checkBox2.Checked)
+            {
                 type = 2;
+                find_max_or_min_of_func A = new find_max_or_min_of_func(a, b, eps, new Fibonacci());
+                string text = A.do_calc(type, max);
+                MessageBox.Show(text);
+            }
+            else
+            {
+                find_max_or_min_of_func A = new find_max_or_min_of_func(a, b, eps, new GoldenRatio());
+                string text = A.do_calc(type, max);
+                MessageBox.Show(text);
+            }
 
-            string text = A.do_calc(type, max);
-            MessageBox.Show(text);
 
 
         }
